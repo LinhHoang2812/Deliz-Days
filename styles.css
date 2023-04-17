@@ -155,8 +155,11 @@ li a {
 }
 
 @media only screen and (max-width: 800px) {
+  .intro {
+    padding-top: 120px;
+  }
   .img {
-    height: 300px;
+    height: 330px;
   }
 }
 
