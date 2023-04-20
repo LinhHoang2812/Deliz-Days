@@ -125,6 +125,33 @@ const menu = [
 const menuContainer = document.querySelector(".menu-container");
 const btnContainer = document.querySelector(".btn-container");
 
+const menutoggle = document.querySelector("ul");
+const menunavbar = document.querySelector("nav");
+const viewMenu = document.querySelector(".scroll-btn");
+
+viewMenu.addEventListener("click", function (e) {
+  e.preventDefault();
+
+  const navHeight = menunavbar.getBoundingClientRect().height;
+  const toggleHeight = menutoggle.getBoundingClientRect().height;
+
+  const fixedNavbar = menunavbar.classList.contains("fixed-navbar");
+  const idSection = e.currentTarget.getAttribute("href");
+  const section = document.querySelector(idSection);
+
+  let position = section.offsetTop - navHeight;
+  if (!fixedNavbar) {
+    position = position - navHeight;
+  }
+
+  if (toggleHeight > 0) {
+    position = position + toggleHeight;
+  }
+
+  window.scrollTo({ left: 0, top: position });
+  menutoggle.style.height = 0;
+});
+
 window.addEventListener("DOMContentLoaded", function () {
   displayMenu(menu);
   displayBtn();

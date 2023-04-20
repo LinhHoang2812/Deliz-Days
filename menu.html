@@ -22,22 +22,39 @@
   </head>
 
   <body>
-    <nav>
-      <div class="nav-center">
-        <div class="nav-header">
-          <img class="logo" src="image/logo.png" alt="logo" />
-          <button class="nav-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
+    <header class="menu-header">
+      <nav>
+        <div class="nav-center">
+          <div class="nav-header">
+            <img class="logo" src="editlogo.png" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li>
+              <a href="index.html#contact-section">Contact</a>
+            </li>
+          </ul>
         </div>
-        <ul class="links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="index.html#contact-section">Contact</a></li>
-        </ul>
+      </nav>
+      <div class="banner">
+        <div class="banner-container">
+          <h3>Authentic Asian food</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+            consectetur quo nulla mollitia? Saepe, rerum! Maxime sint
+            consectetur beatae facilis numquam quia nostrum at in?
+          </p>
+
+          <a href="#menu" class="scroll-btn">view menu</a>
+        </div>
       </div>
-    </nav>
-    <section class="menu">
+    </header>
+
+    <section class="menu" id="menu">
       <div class="menu-title">
         <h2>Our menu</h2>
       </div>
@@ -67,7 +84,7 @@
     </section>
 
     <div class="copyright">
-      <small> © 2023 by Linh Hoang</small>
+      <small> © <span class="date"></span> by Linh Hoang</small>
     </div>
 
     <!-- java script -->

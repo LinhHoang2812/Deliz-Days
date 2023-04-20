@@ -21,31 +21,29 @@
   </head>
 
   <body>
-    <nav>
-      <div class="nav-center">
-        <div class="nav-header">
-          <img class="logo" src="image/logo.png" alt="logo" />
-          <button class="nav-toggle">
-            <i class="fas fa-bars"></i>
-          </button>
+    <header class="main-header">
+      <nav>
+        <div class="nav-center">
+          <div class="nav-header">
+            <img class="logo" src="editlogo.png" alt="logo" />
+            <button class="nav-toggle">
+              <i class="fas fa-bars"></i>
+            </button>
+          </div>
+          <ul class="links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="#contact-section" class="scroll-link">Contact</a></li>
+          </ul>
         </div>
-        <ul class="links">
-          <li><a href="#">Home</a></li>
-          <li><a href="menu.html">Menu</a></li>
-          <li><a href="#contact-section">Contact</a></li>
-        </ul>
-      </div>
-    </nav>
+      </nav>
+
+      <video class="video-container" muted autoplay loop>
+        <source src="introvid.mp4" type="video/mp4" />
+      </video>
+    </header>
+
     <section class="intro">
-      <div class="intro-container">
-        <img
-          class="img"
-          src="image/introimg1.png"
-          alt="restaurant"
-          width="460"
-          height="345"
-        />
-      </div>
       <div class="intro-text">
         <h1>Welcome to Delicous Days</h1>
         <h2>Here shall you enjoy only delicious food</h2>
@@ -56,7 +54,7 @@
       </div>
     </section>
 
-    <section class="story">
+    <section class="story" id="story" s>
       <div class="story-container">
         <div>
           <img class="story-img" src="image/kamone-4.png" alt="kamome diner" />
@@ -219,7 +217,7 @@
       </div>
     </footer>
     <div class="copyright">
-      <small> © 2023 by Linh Hoang</small>
+      <small> © <span class="date"></span> by Linh Hoang</small>
     </div>
 
     <script src="script.js"></script>
