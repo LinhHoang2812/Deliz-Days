@@ -332,12 +332,12 @@ li a {
 }
 
 .banner {
+  min-height: 80vh;
   display: grid;
   place-items: center;
-  height: 80vh;
+  text-align: center;
 }
 .banner-container {
-  text-align: center;
   color: whitesmoke;
 }
 .banner-container p {

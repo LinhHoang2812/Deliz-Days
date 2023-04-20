@@ -140,9 +140,9 @@ viewMenu.addEventListener("click", function (e) {
   const section = document.querySelector(idSection);
 
   let position = section.offsetTop - navHeight;
-  if (!fixedNavbar) {
-    position = position - navHeight;
-  }
+  // if (!fixedNavbar) {
+  //   position = position - navHeight;
+  // }
 
   if (toggleHeight > 0) {
     position = position + toggleHeight;
