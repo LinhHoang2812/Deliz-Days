@@ -332,7 +332,7 @@ li a {
 }
 
 .banner {
-  min-height: 100vh;
+  min-height: 80vh;
   display: grid;
   place-items: center;
   text-align: center;
