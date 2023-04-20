@@ -334,7 +334,7 @@ li a {
 .banner {
   display: grid;
   place-items: center;
-  min-height: 100vh;
+  height: 80vh;
 }
 .banner-container {
   text-align: center;
