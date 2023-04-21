@@ -337,11 +337,12 @@ li a {
 .banner {
   min-height: 100vh;
   display: grid;
-  place-items: center;
-  text-align: center;
+  justify-content: center;
 }
 .banner-container {
+  padding: 200px 0;
   color: whitesmoke;
+  text-align: center;
 }
 .banner-container h2 {
   margin: 0 0;
