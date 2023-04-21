@@ -42,14 +42,11 @@ scrollLink.addEventListener("click", function (e) {
   const navHeight = navbar.getBoundingClientRect().height;
   const toggleHeight = toggle.getBoundingClientRect().height;
   const fixedNavbar = navbar.classList.contains("fixed-navbar");
-  console.log(fixedNavbar);
   const idSection = e.currentTarget.getAttribute("href");
   const section = document.querySelector(idSection);
 
   let position = section.offsetTop - navHeight;
-  // if (!fixedNavbar) {
-  //   position = position - navHeight;
-  // }
+  console.log(position);
 
   if (toggleHeight > 0) {
     position = position + toggleHeight;
