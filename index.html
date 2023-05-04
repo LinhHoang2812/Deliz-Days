@@ -33,6 +33,7 @@
           <ul class="links">
             <li><a href="index.html">Home</a></li>
             <li><a href="menu.html">Menu</a></li>
+            <li><a href="#booking-section" class="scroll-link">Book now</a></li>
             <li><a href="#contact-section" class="scroll-link">Contact</a></li>
           </ul>
         </div>
@@ -78,9 +79,45 @@
         </div>
       </div>
     </section>
+    <section id="booking-section">
+      <div class="booking-container">
+        <div class="booking-title">
+          <h3>Book your table</h3>
+        </div>
+        <form class="booking-form">
+          <label for="name">Your name</label><br />
+          <input type="text" id="name" /><br />
+          <!-- <label for="phone">Your phone number</label><br />
+          <input type="tel" id="phone" /><br /> -->
+          <label for="amount">The number of people</label><br />
+          <input type="number" id="amount" placeholder="e.g 2" min="1" /><br />
+          <label for="date">Date</label><br />
+          <input
+            type="date"
+            name="date"
+            id="booking-date"
+            min="2023-05-04"
+            max="2023-05-20"
+          /><br />
+          <label for="time"
+            >Time (please choose a time within our opening hours)</label
+          ><br />
+          <input type="time" name="time" id="booking-time" value="20:00" />
+          <button class="submit-btn">Book now</button>
+        </form>
+        <div class="booking-modal">
+          <div class="modal-container">
+            <div class="modal-content"></div>
+            <button class="close-btn">
+              <i class="fas fa-times"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
     <section class="questions">
       <div class="title">
-        <h2>Most asked questions</h2>
+        <h3>Most asked questions</h3>
       </div>
       <div class="question-content">
         <!-- start single question -->
